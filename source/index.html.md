@@ -2,8 +2,6 @@
 title: API Documentation
 
 search: true
-
-code_clipboard: true
 ---
 
 Visualize.js
@@ -12,6 +10,12 @@ Visualize.js
 Visualize.js is a JavaScript API framework used to embed JasperReport Server reports & visualizations inside web applications.
 It comes bundled with the commercial editions of TIBCO JasperReports® Server, specifically Jaspersoft AWS, Enterprise or
 Professional (and as an add-on with Jaspersoft Reporting).
+
+<a href="https://github.com/CONTENT-URL/js-visualize" target="_blank">
+  <img style="position: absolute; top: 0; right: 0; border: 0;" 
+    src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" 
+    alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png">
+</a> 
 
 > In this guide you will find a full listing of Visualize.js API code samples.
 
@@ -30,27 +34,27 @@ Installing Jaspersoft
 Getting Started
 ---------------
 
-### Live Fiddles
+**Live Fiddles**
 
 View and reuse the live Visualize.js API samples in this guide and(or) reference to your own [installation]
 
-To use your own install change the following HTML in the fiddles...
+> To use your own install change the following HTML in the fiddles...
 
  ``` html
- <script src="http://visualizejsdemo.jaspersoft.com/jasperserver-pro/client/visualize.js"></script>
+ <script src="https://mobiledemo.jaspersoft.com/jasperserver-pro/client/visualize.js"></script>
  ```
 
-and reference the location of your JasperReport Server installation...
+> and reference the location of your JasperReport Server installation...
 
   ``` html
  <script src="[myserver]/jasperserver-pro/client/visualize.js"></script>
  ```
 
-### Video Tutorials
+**Video Tutorials**
 
 * Need a jump start? Watch our [API video tutorials] for more information on Visualize.js and embedding inside your application.
 
-### Via GitHub
+**Via GitHub**
 
 * Fork this Visualize.js API [sample set and guide] for your own use
 * Download our [sample application] on GitHub featuring Visualize.js
@@ -75,11 +79,11 @@ Ad Hoc View Samples
 
 Try it:
 
-<b>[Render Table], [customize with CSS], [crosstab with CSS], [chart with selector]</b>
+<b>[Render table], [customize with CSS], [crosstab with CSS], [chart with selector]</b>
 
 Initialization of the visualize.js library with simple rendering of ad hoc views using plain text authentication. See full authentication samples in this guide for securing data and views with the JasperReports Server and Visualize.js.
 
->You can easily change the resource to embed a different report from the JasperReport Server.
+>You can easily change the resource to embed a different view from the JasperReport Server.
 
 >For example:
 
@@ -101,7 +105,7 @@ Try it:
 
 Control the ad hoc view visualization type (canvas) for users to access. The default visualization selector can be turned off with a line of CSS and only select visualizations used. See dynamic list example for all available visualizations and each name reference.
 
-### Custom Input Controls
+### Input Controls
 
 Try it:
 
@@ -114,6 +118,18 @@ Try it:
 <b>[Dynamic input control values]</b>
 
 Build a custom input control dynamically using input control data from an ad hoc view.
+
+>Try: A hard coded or dynamic variable...
+
+``` javascript
+      inputSelection = "Non-Consumable"
+``` 
+
+>for parameter control...
+
+``` javascript
+      "ProductFamily": ["Food", inputSelection]
+``` 
 
 ### Hyperlinks
 
