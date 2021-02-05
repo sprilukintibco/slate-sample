@@ -66,6 +66,16 @@ under the License.
       <%= javascript_include_tag  "all_nosearch" %>
     <% end %>
 
+    <script>
+      jQuery(document).ready(function(){
+        jQuery('a[href^="https://"]').each(function(){
+          var oldUrl = jQuery(this).attr("href");
+          var newUrl = oldUrl.replace("CONTENT-URL", window.location.host.split(".")[0]);
+          jQuery(this).attr("href", newUrl);
+        });
+      });
+    </script>
+
     <% if current_page.data.code_clipboard %>
     <script>
       $(function() { setupCodeCopy(); });
