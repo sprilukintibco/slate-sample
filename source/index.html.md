@@ -1,3 +1,11 @@
+---
+title: API Documentation
+
+search: true
+
+code_clipboard: true
+---
+
 Visualize.js
 ============
 
