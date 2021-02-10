@@ -30,6 +30,11 @@ Professional (and as an add-on with Jaspersoft Reporting).
 
 [Download Jaspersoft >][Download JRS]
 
+<iframe src="https://codesandbox.io/embed/github/sprilukintibco/slate-sample/tree/main/test-codesandbox?fontsize=14&hidenavigation=1&hidedevtools=1&runonclick=1&theme=light"
+style="width:50%; height:500px; border:0; overflow:hidden;"
+title="vanilla"
+sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+
 Installing Jaspersoft
 ----------------------
 
