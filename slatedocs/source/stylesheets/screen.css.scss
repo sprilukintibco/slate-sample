@@ -370,8 +370,15 @@ html, body {
     background-color: #fdfdfd;
   }
 
+  .main-header {
+    @extend h1;
+    font-weight: normal;
+    background-color: inherit;
+    border-bottom: 0;
+  }
+
   h1:first-child, div:first-child + h1 {
-    border-top-width: 0;
+    //border-top-width: 0;
     margin-top: 0;
   }
 
